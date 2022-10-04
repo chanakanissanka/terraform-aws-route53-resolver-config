@@ -13,6 +13,7 @@ module "r53-resolver-enpoints-rules" {
       ips         = ["10.200.0.4", "10.200.0.5"]
 
     }]
-    vpc_id = "vpc-072b83a0cddfae6ba"
-    security_group_id = "sg-0bcf6fabd2f3c2b68"
+    vpc_id = "Your VPC ID"
+    security_group_id = "Your SG id"
+    rule_type = "Forward"
 }

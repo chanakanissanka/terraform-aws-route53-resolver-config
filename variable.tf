@@ -7,3 +7,5 @@ variable "rules" {
   type    = list(any)
 
 }
+
+variable "rule_type" {}
