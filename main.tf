@@ -40,7 +40,7 @@ resource "aws_route53_resolver_rule" "fwd" {
   count                = length(local.r53rules)
   domain_name          = lookup(element(local.r53rules, count.index), "domain_name", null)
   name                 = lookup(element(local.r53rules, count.index), "rule_name", null)
-  rule_type            = "FORWARD"
+  rule_type            = var.rule_type
   resolver_endpoint_id = aws_route53_resolver_endpoint.bar.id
 
 

@@ -15,4 +15,5 @@ module "r53-resolver-enpoints-rules" {
     }]
     vpc_id = "Your VPC ID"
     security_group_id = "Your SG id"
+    rule_type = "Forward"
 }
