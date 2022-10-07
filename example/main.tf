@@ -1,6 +1,5 @@
 module "r53-resolver-enpoints-rules" {
-  #source = "git::https://github.com/chanakanissanka/terraform-aws-route53-resolver-endpoints"
-  source = "../"
+  source = "git::https://github.com/chanakanissanka/terraform-aws-route53-resolver-endpoints"
   rules = [
     {
       rule_name   = "r53-rule-1"
