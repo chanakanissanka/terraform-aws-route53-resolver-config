@@ -3,7 +3,7 @@ resource "aws_route53_resolver_endpoint" "inbound_resolver" {
   name      = "inbound-resolver"
   direction = "INBOUND"
   security_group_ids = [
-    data.aws_security_group.selected.id,
+    data.aws_security_groups.selected.id,
 
   ]
   dynamic "ip_address" {
@@ -22,7 +22,7 @@ resource "aws_route53_resolver_endpoint" "outbound_resolver" {
   name      = "outbound-resolver"
   direction = "OUTBOUND"
   security_group_ids = [
-    data.aws_security_group.selected.id,
+    data.aws_security_groups.selected.id,
 
   ]
   dynamic "ip_address" {
