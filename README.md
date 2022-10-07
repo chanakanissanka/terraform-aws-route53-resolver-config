@@ -29,11 +29,10 @@ No modules.
 
 ## Inputs
 
-| Name                                                                                      | Description | Type        | Default | Required |
-| ----------------------------------------------------------------------------------------- | ----------- | ----------- | ------- | :------: |
-| <a name="input_rules"></a> [rules](#input\_rules)                                         | n/a         | `list(any)` | `[]`    |    no    |
-| <a name="input_security_group_id"></a> [security\_group\_id](#input\_security\_group\_id) | n/a         | `any`       | n/a     |   yes    |
-| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id)                                    | n/a         | `any`       | n/a     |   yes    |
+| Name                                                   | Description | Type        | Default | Required |
+| ------------------------------------------------------ | ----------- | ----------- | ------- | :------: |
+| <a name="input_rules"></a> [rules](#input\_rules)      | n/a         | `list(any)` | `[]`    |    no    |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | n/a         | `any`       | n/a     |   yes    |
 
 ## Outputs
 
