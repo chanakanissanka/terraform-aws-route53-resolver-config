@@ -1,5 +1,6 @@
+variable "rule_type" {
 
-
+}
 variable "vpc_id" {
   description = "VPC ID"
 }
