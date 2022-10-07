@@ -20,8 +20,8 @@ No modules.
 
 | Name                                                                                                                                                           | Type        |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| [aws_route53_resolver_endpoint.bar](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_resolver_endpoint)                     | resource    |
-| [aws_route53_resolver_endpoint.foo](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_resolver_endpoint)                     | resource    |
+| [aws_route53_resolver_endpoint.inbound_resolver](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_resolver_endpoint)        | resource    |
+| [aws_route53_resolver_endpoint.outbound_resolver](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_resolver_endpoint)       | resource    |
 | [aws_route53_resolver_rule.fwd](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_resolver_rule)                             | resource    |
 | [aws_route53_resolver_rule_association.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_resolver_rule_association) | resource    |
 | [aws_security_group.selected](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/security_group)                                   | data source |
