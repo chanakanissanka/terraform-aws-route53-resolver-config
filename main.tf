@@ -1,6 +1,6 @@
 #Inbound
-resource "aws_route53_resolver_endpoint" "foo" {
-  name      = "foo"
+resource "aws_route53_resolver_endpoint" "inbound_resolver" {
+  name      = "inbound-resolver"
   direction = "INBOUND"
   security_group_ids = [
     data.aws_security_group.selected.id,
@@ -18,8 +18,8 @@ resource "aws_route53_resolver_endpoint" "foo" {
 }
 
 #Outbound
-resource "aws_route53_resolver_endpoint" "bar" {
-  name      = "bar"
+resource "aws_route53_resolver_endpoint" "outbound_resolver" {
+  name      = "outbound-resolver"
   direction = "OUTBOUND"
   security_group_ids = [
     data.aws_security_group.selected.id,
@@ -40,8 +40,8 @@ resource "aws_route53_resolver_rule" "fwd" {
   count                = length(local.r53rules)
   domain_name          = lookup(element(local.r53rules, count.index), "domain_name", null)
   name                 = lookup(element(local.r53rules, count.index), "rule_name", null)
-  rule_type            = var.rule_type
-  resolver_endpoint_id = aws_route53_resolver_endpoint.bar.id
+  rule_type            = "Forward"
+  resolver_endpoint_id = aws_route53_resolver_endpoint.outbound_resolver.id
 
 
   dynamic "target_ip" {
